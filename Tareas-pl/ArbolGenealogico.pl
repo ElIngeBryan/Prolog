@@ -36,6 +36,9 @@ Hijo(Alex).
 Hijo(Emiliano).
 Hijo(Parros).
 Hijo(Kevin).
+Hijo(Dorian).
+Hijo(Alan).
+Hijo(Dilan).
 
 Hija(Milagros).
 Hija(Regina).
@@ -50,6 +53,51 @@ Hija(Yarely).
 Hija(Alejandra).
 Hija(Kimberly).
 
+padrede().
+padrede().
+padrede().
+padrede().
+padrede().
+padrede().
+padrede().
+padrede().
+padrede().
+padrede().
+padrede().
+padrede().
+padrede().
+padrede().
+padrede().
+padrede().
+padrede().
+padrede().
+
+madrede().
+madrede().
+madrede().
+madrede().
+madrede().
+madrede().
+madrede().
+madrede().
+madrede().
+madrede().
+madrede().
+madrede().
+madrede().
+madrede().
+madrede().
+madrede().
+madrede().
+madrede().
+madrede().
+madrede().
+madrede().
+madrede().
+madrede().
+madrede().
 
 
+
+/*Primo(X,Y):-hijode(X,W),hermanode(W,Z),padrede(Z,Y)*/
 
