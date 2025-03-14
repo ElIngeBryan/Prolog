@@ -1,103 +1,116 @@
-padre(Salvador Grande).
-padre(Odilon)
-padre(Juan).
-padre(Salvador Mediano).
-padre(Rafael).
-padre(Miguel).
-padre(Alberto).
-padre(Samuel).
+% abuelitos
+padre(donsalvador).
+padre(donOdilon).
+% aquitermina
+padre(salvador).
+padre(rafael).
+padre(miguel).
+padre(alberto).
+padre(samuel).
 
-Madre(Sara Grande).
-Madre(Rosalia).
-Madre(Guadalupe).
-Madre(Margarita).
-Madre(Yesenia).
-Madre(Sara).
-Madre(Marbe).
-Madre(Urisbi)
-Madre(Veronica).
+% abuelitas
+madre(donaSara).
+madre(donaRosalia).
+% aquitermina
+madre(yesenia).
+madre(sara).
+madre(marbe).
+madre(uri).
+madre(veronica).
 
-Hijo(Juan).
-Hijo(Alejandro).
-Hijo(Salvador Mediano).
-Hijo(Rafael).
-Hijo(Miguel).
-Hijo(Arturo).
-Hijo(Samuel).
-Hijo(Omar).
-Hijo(Juanito).
-Hijo(David).
-Hijo(Hector).
-Hijo(Bryan).
-Hijo(Aldair).
-Hijo(Rafita).
-Hijo(Miguelito).
-Hijo(Alex).
-Hijo(Emiliano).
-Hijo(Parros).
-Hijo(Kevin).
-Hijo(Dorian).
-Hijo(Alan).
-Hijo(Dilan).
+% Hijos e Hijas
+hijo(salvador).
+hijo(rafael).
+hijo(miguel).
+hijo(alberto).
+hijo(arturo).
+hijo(samuel).
+hijo(omar).
+hijo(david).
+hijo(hector).
+hijo(bryan).
+hijo(aldair).
+hijo(rafita).
+hijo(miguelito).
+hijo(alex).
+hijo(emiliano).
+hijo(parros).
+hijo(kevin).
+hijo(dorian).
+hijo(alan).
+hijo(dilan).
 
-Hija(Milagros).
-Hija(Regina).
-Hija(Perla).
-Hija(Wendy).
-Hija(Itari).
-Hija(Wereja).
-Hija(Yesica).
-Hija(Vanessa).
-Hija(Arely).
-Hija(Yarely).
-Hija(Alejandra).
-Hija(Kimberly).
+hija(yesenia).
+hija(sara).
+hija(marbe).
+hija(uri).
+hija(veronica).
+hija(amairani).
 
-padrede().
-padrede().
-padrede().
-padrede().
-padrede().
-padrede().
-padrede().
-padrede().
-padrede().
-padrede().
-padrede().
-padrede().
-padrede().
-padrede().
-padrede().
-padrede().
-padrede().
-padrede().
+hija(milagros).
+hija(regina).
+hija(perla).
+hija(wendy).
+hija(itari).
+hija(wereja).
+hija(yesica).
+hija(vanessa).
+hija(kimberly).
+hija(britany).
 
-madrede().
-madrede().
-madrede().
-madrede().
-madrede().
-madrede().
-madrede().
-madrede().
-madrede().
-madrede().
-madrede().
-madrede().
-madrede().
-madrede().
-madrede().
-madrede().
-madrede().
-madrede().
-madrede().
-madrede().
-madrede().
-madrede().
-madrede().
-madrede().
+% Relaciones de padres
+padrede(donsalvador, salvador).
+padrede(donsalvador, miguel).
+padrede(donsalvador, rafael).
+padrede(donsalvador, alberto).
+padrede(donsalvador, yesenia).
+padrede(donsalvador, sara).
+padrede(donsalvador, marbe).
+padrede(donsalvador, uri).
+padrede(donOdilon, arturo).
+padrede(donOdilon, samuel).
+padrede(donOdilon, omar).
+padrede(donOdilon, veronica).
 
+padrede(salvador, david).
+padrede(salvador, hector).
+padrede(salvador, bryan).
+padrede(miguel, miguelito).
+padrede(miguel, regina).
+padrede(rafael, aldair).
+padrede(rafael, rafita).
+padrede(rafael, milagros).
+padrede(alberto, dorian).
+padrede(alberto, alan).
+padrede(alberto, dilan).
+padrede(samuel, alex).
+padrede(samuel, britany).
 
+% Relaciones de madres
+madrede(donaSara, salvador).
+madrede(donaSara, rafael).
+madrede(donaSara, miguel).
+madrede(donaSara, alberto).
+madrede(donaSara, yesenia).
+madrede(donaSara, marbe).
+madrede(donaSara, amairani).
+madrede(donaSara, sara).
+madrede(donaSara, uri).
+madrede(donaRosalia, arturo).
+madrede(donaRosalia, veronica).
+madrede(donaRosalia, samuel).
+madrede(donaRosalia, omar).
 
-/*Primo(X,Y):-hijode(X,W),hermanode(W,Z),padrede(Z,Y)*/
-
+madrede(yesenia, yesica).
+madrede(yesenia, vanessa).
+madrede(yesenia, emiliano).
+madrede(marbe, kimberly).
+madrede(marbe, kevin).
+madrede(sara, perla).
+madrede(sara, wendy).
+madrede(sara, parros).
+madrede(uri, wereja).
+madrede(uri, itari).
+madrede(veronica, david).
+madrede(veronica, hector).
+madrede(veronica, bryan).
