@@ -1,6 +1,32 @@
+hombre(donsalvador).
+hombre().
+hombre().
+hombre().
+hombre().
+hombre().
+hombre().
+hombre().
+hombre().
+hombre().
+hombre().
+hombre().
+hombre().
+hombre().
+hombre().
+hombre().
+hombre().
+hombre().
+hombre().
+hombre().
+hombre().
+
+
+mujer().
+
+
 % abuelitos
 padre(donsalvador).
-padre(donOdilon).
+padre(donodilon).
 % aquitermina
 padre(salvador).
 padre(rafael).
@@ -67,10 +93,11 @@ padrede(donsalvador, yesenia).
 padrede(donsalvador, sara).
 padrede(donsalvador, marbe).
 padrede(donsalvador, uri).
-padrede(donOdilon, arturo).
-padrede(donOdilon, samuel).
-padrede(donOdilon, omar).
-padrede(donOdilon, veronica).
+padrede(donsalvador, amairani).
+padrede(donodilon, arturo).
+padrede(donodilon, samuel).
+padrede(donodilon, omar).
+padrede(donodilon, veronica).
 
 padrede(salvador, david).
 padrede(salvador, hector).
@@ -114,3 +141,11 @@ madrede(uri, itari).
 madrede(veronica, david).
 madrede(veronica, hector).
 madrede(veronica, bryan).
+
+
+
+hijode(X,Y):-madrede(X,Y).
+hijode(X,Y):-padrede(X,Y).
+
+hermanode(X, Y) :- padrede(W, X), padrede(W,Y), X \= Y.
+
