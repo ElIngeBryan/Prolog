@@ -4,7 +4,8 @@ un color diferente y se especializa en una rama distinta de la
 ciencia. Además, cada científico usa un tipo diferente de equipo y
 prefiere una bebida específica mientras trabaja.
 
-Pistas El científico en el laboratorio rojo investiga en Biología.
+Pistas 
+    El científico en el laboratorio rojo investiga en Biología.
     El físico trabaja en el laboratorio azul.  
     El químico usa un microscopio.
     La persona en el laboratorio verde toma té.  
@@ -24,3 +25,7 @@ Pistas El científico en el laboratorio rojo investiga en Biología.
     ¿En qué laboratorio trabaja el científico de Química?  
     ¿Quién usa la pipeta?  
     ¿Cuál es la bebida preferida del científico que investiga en Matemáticas?
+
+    Informacion extraida:
+
+    Encontrar predicados monarios
