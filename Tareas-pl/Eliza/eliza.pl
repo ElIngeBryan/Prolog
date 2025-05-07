@@ -20,12 +20,25 @@ eliza(Input) :-
 
 template([hola, mi, nombre, es, s(_), '.'], ['Hola', 0, 'Como', estas, tu, '?'], [4]).
 template([buendia, mi, nombre, es, s(_), '.'], ['buen dia', 'Como', estas, tu, 0, '?'], [4]).
-
 template([hola, ',', mi, nombre, es, s(_), '.'], ['Hola', 0, 'Como', estas, tu, '?'], [5]).
 template([buendia, ',', mi, nombre, es, s(_), '.'], ['Buendia', 'Como', estas, tu, 0, '?'], [5]).
-
 template([hola, _], ['Hola', 'como', estas, tu, '?'], []).
 template([buendia, _], ['Buendia', 'Como', estas, tu, '?'], []).
+
+% Saludos agregados
+template([hola, que, tal, ',', mi, nombre, es, s(_), '.'], ['Hola', 0, 'que tal,', 'como', estas, tu, '?'], [7]).
+template([saludos, ',', soy, s(_), '.'], ['Saludos', 'como', estas, tu, 0, '?'], [3]).
+template([buenas, tardes, ',', mi, nombre, es, s(_), '.'], ['Buenas tardes', 'como', estas, tu, 0, '?'], [6]).
+template([buenas, noches, ',', mi, nombre, es, s(_), '.'], ['Buenas noches', 'como', estas, tu, 0, '?'], [6]).
+template([hola, a, todos, ',', me, llamo, s(_), '.'], ['Hola a todos', 'como', estan, ustedes, '?', 0], [6]).
+template([un, gusto, ',', soy, s(_), '.'], ['Un gusto', 'como', estas, tu, 0, '?'], [3]).
+template([hey, ',', mi, nombre, es, s(_), '.'], ['Hey', 'como', estas, tu, 0, '?'], [5]).
+template([que, tal, ',', me, llamo, s(_), '.'], ['Que tal', 'como', estas, tu, 0, '?'], [5]).
+template([hola, soy, s(_), '.'], ['Hola', 0, 'como', estas, tu, '?'], [2]).
+template([muy, buenas, ',', mi, nombre, es, s(_), '.'], ['Muy buenas', 'como', estas, tu, 0, '?'], [5]).
+&template([ _ ], ['Hola soy eliza, mucho en gusto en atenderte, cual es tu nombre'])
+template([holi, soy, s(_), '.'],[hola, 0, como etas?])
+
 
 template([yo, s(_), yo, soy, s(_),'.'], [por, que, 0, eres, 1, '?'], [1, 4]).
 template([yo, s(_), tu, '.'], [why, do, you, 0, me ,'?'], [1]).
