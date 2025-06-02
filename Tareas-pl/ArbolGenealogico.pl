@@ -1,28 +1,3 @@
-hombre(donsalvador).
-hombre().
-hombre().
-hombre().
-hombre().
-hombre().
-hombre().
-hombre().
-hombre().
-hombre().
-hombre().
-hombre().
-hombre().
-hombre().
-hombre().
-hombre().
-hombre().
-hombre().
-hombre().
-hombre().
-hombre().
-
-
-mujer().
-
 
 % abuelitos
 padre(donsalvador).
@@ -142,10 +117,35 @@ madrede(veronica, david).
 madrede(veronica, hector).
 madrede(veronica, bryan).
 
+% Padres combinados
+padres(X, Y) :- padrede(X, Y).
+padres(X, Y) :- madrede(X, Y).
 
+% Hijos combinados
+hijos(X, Y) :- hijode(X, Y).
 
-hijode(X,Y):-madrede(X,Y).
-hijode(X,Y):-padrede(X,Y).
+% Abuelo y abuela
+abuelo(A, N) :- padrede(A, P), padres(P, N).
+abuela(A, N) :- madrede(A, P), padres(P, N).
 
-hermanode(X, Y) :- padrede(W, X), padrede(W,Y), X \= Y.
+% Nieto y nieta
+nieto(N, A) :- hijo(N), (abuelo(A, N); abuela(A, N)).
+nieta(N, A) :- hija(N), (abuelo(A, N); abuela(A, N)).
 
+% Hermano y hermana
+hermano(X, Y) :- hijo(X), hermanode(X, Y).
+hermana(X, Y) :- hija(X), hermanode(X, Y).
+
+% Tío y tía
+tio(T, S) :- hermano(T, P), padres(P, S).
+tia(T, S) :- hermana(T, P), padres(P, S).
+
+% Sobrino y sobrina
+sobrino(S, T) :- hijo(S), (tio(T, S); tia(T, S)).
+sobrina(S, T) :- hija(S), (tio(T, S); tia(T, S)).
+
+% Primo y prima
+primo(P, X) :- hijo(P), padres(A, P), tio_tia_de(A, X).
+prima(P, X) :- hija(P), padres(A, P), tio_tia_de(A, X).
+
+tio_tia_de(T, S) :- padres(P, S), (hermano(T, P); hermana(T, P)).
